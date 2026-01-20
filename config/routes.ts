@@ -43,6 +43,13 @@
 		component: './TodoList',
 	},
 
+	{
+		path: '/product-management',
+		name: 'Product Management',
+		icon: 'TableOutlined',
+		component: './ProductManagement',
+	},
+
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
