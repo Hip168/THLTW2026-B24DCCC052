@@ -37,6 +37,18 @@
 		icon: 'ArrowsAltOutlined',
 	},
 	{
+		path: '/guessing-game',
+		name: 'Bài 1: Đoán Số',
+		icon: 'PlayCircleOutlined',
+		component: './GuessingGame',
+	},
+	{
+		path: '/study-manager',
+		name: 'Bài 2: Quản Lý Học Tập',
+		icon: 'BookOutlined',
+		component: './StudyManager',
+	},
+	{
 		path: '/todo-list',
 		name: 'TodoList',
 		icon: 'OrderedListOutlined',

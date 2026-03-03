@@ -1,3 +1,3 @@
-export const unAuthPaths = ['/notification', '/notification/check'];
+export const unAuthPaths = ['/notification', '/notification/check', '/guessing-game', '/study-manager'];
 
-export const unCheckPermissionPaths = ['/notification/subscribe'];
+export const unCheckPermissionPaths = ['/notification/subscribe', '/guessing-game', '/study-manager'];
