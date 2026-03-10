@@ -1,4 +1,4 @@
-﻿export default [
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -16,8 +16,7 @@
 		],
 	},
 
-	///////////////////////////////////
-	// DEFAULT MENU
+
 	{
 		path: '/dashboard',
 		name: 'Dashboard',
@@ -42,20 +41,40 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
+	{
+		path: '/oan-tu-ti',
+		name: 'Oẳn Tù Tì',
+		icon: 'ThunderboltOutlined',
+		component: './OanTuTi',
+	},
+	{
+		name: 'Ngân hàng',
+		path: '/ngan-hang',
+		icon: 'DatabaseOutlined',
+		routes: [
+			{
+				name: 'Khối kiến thức',
+				path: 'khoi-kien-thuc',
+				component: './NganHang/KhoiKienThuc',
+			},
+			{
+				name: 'Môn học',
+				path: 'mon-hoc',
+				component: './NganHang/MonHoc',
+			},
+			{
+				name: 'Câu hỏi',
+				path: 'cau-hoi',
+				component: './NganHang/CauHoi',
+			},
+			{
+				name: 'Đề thi',
+				path: 'de-thi',
+				component: './NganHang/DeThi',
+			},
+		],
+	},
 
-	// DANH MUC HE THONG
-	// {
-	// 	name: 'DanhMuc',
-	// 	path: '/danh-muc',
-	// 	icon: 'copy',
-	// 	routes: [
-	// 		{
-	// 			name: 'ChucVu',
-	// 			path: 'chuc-vu',
-	// 			component: './DanhMuc/ChucVu',
-	// 		},
-	// 	],
-	// },
 
 	{
 		path: '/notification',
