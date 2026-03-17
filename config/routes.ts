@@ -1,4 +1,4 @@
-﻿export default [
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -78,6 +78,39 @@
 		],
 		layout: false,
 		hideInMenu: true,
+	},
+	{
+		path: '/booking',
+		name: 'Đặt Lịch',
+		icon: 'ScheduleOutlined',
+		component: './Booking',
+	},
+	{
+		path: '/admin',
+		name: 'Quản Trị',
+		icon: 'LockOutlined',
+		routes: [
+			{
+				path: '/admin/appointments',
+				name: 'Lịch Hẹn',
+				component: './Admin/Appointments',
+			},
+			{
+				path: '/admin/employees',
+				name: 'Nhân Viên',
+				component: './Admin/Employees',
+			},
+			{
+				path: '/admin/services',
+				name: 'Dịch Vụ',
+				component: './Admin/Services',
+			},
+			{
+				path: '/admin/stats',
+				name: 'Thống Kê',
+				component: './Admin/Stats',
+			},
+		],
 	},
 	{
 		path: '/',
