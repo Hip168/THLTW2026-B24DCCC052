@@ -1,4 +1,4 @@
-﻿export default [
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -21,8 +21,26 @@
 	{
 		path: '/dashboard',
 		name: 'Dashboard',
-		component: './TrangChu',
+		component: './Dashboard',
 		icon: 'HomeOutlined',
+	},
+	{
+		path: '/club-management',
+		name: 'Quản lý CLB',
+		component: './ClubManagement',
+		icon: 'TeamOutlined',
+	},
+	{
+		path: '/application-management',
+		name: 'Đơn đăng ký',
+		component: './ApplicationManagement',
+		icon: 'FileTextOutlined',
+	},
+	{
+		path: '/member-management',
+		name: 'Thành viên',
+		component: './MemberManagement',
+		icon: 'UserOutlined',
 	},
 	{
 		path: '/gioi-thieu',
