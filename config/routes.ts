@@ -1,4 +1,4 @@
-﻿export default [
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -41,6 +41,47 @@
 		name: 'TodoList',
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
+	},
+
+	{
+		path: '/du-lich',
+		name: 'Du Lịch',
+		icon: 'CompassOutlined',
+		routes: [
+			{
+				path: '/du-lich/kham-pha',
+				name: 'Khám Phá',
+				component: './DuLich/KhamPha',
+			},
+			{
+				path: '/du-lich/lich-trinh',
+				name: 'Lịch Trình',
+				component: './DuLich/LichTrinh',
+			},
+			{
+				path: '/du-lich/ngan-sach',
+				name: 'Ngân Sách',
+				component: './DuLich/NganSach',
+			},
+		],
+	},
+	{
+		path: '/admin/du-lich',
+		name: 'Quản Trị Du Lịch',
+		icon: 'SettingOutlined',
+		access: 'isAdmin',
+		routes: [
+			{
+				path: '/admin/du-lich/quan-ly',
+				name: 'Quản Lý Điểm Đến',
+				component: './Admin/DuLich/QuanLyDiemDen',
+			},
+			{
+				path: '/admin/du-lich/thong-ke',
+				name: 'Thống Kê',
+				component: './Admin/DuLich/ThongKe',
+			},
+		],
 	},
 
 	// DANH MUC HE THONG
