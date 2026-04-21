@@ -1,4 +1,4 @@
-﻿export default [
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -78,6 +78,43 @@
 		],
 		layout: false,
 		hideInMenu: true,
+	},
+	{
+		path: '/blog',
+		name: 'Blog',
+		icon: 'ReadOutlined',
+		routes: [
+			{
+				path: '/blog',
+				component: './Blog/TrangChu',
+				exact: true,
+				name: 'Danh sách bài viết',
+			},
+			{
+				path: '/blog/gioi-thieu',
+				component: './Blog/GioiThieu',
+				exact: true,
+				name: 'Giới thiệu',
+			},
+			{
+				path: '/blog/quan-ly/bai-viet',
+				component: './Blog/QuanLy/BaiViet',
+				exact: true,
+				name: 'Quản lý bài viết',
+			},
+			{
+				path: '/blog/quan-ly/the',
+				component: './Blog/QuanLy/The',
+				exact: true,
+				name: 'Quản lý thẻ',
+			},
+			{
+				path: '/blog/:slug',
+				component: './Blog/ChiTiet',
+				exact: true,
+				hideInMenu: true,
+			},
+		],
 	},
 	{
 		path: '/',
