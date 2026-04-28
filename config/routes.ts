@@ -1,4 +1,4 @@
-﻿export default [
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -21,26 +21,32 @@
 	{
 		path: '/dashboard',
 		name: 'Dashboard',
-		component: './TrangChu',
+		component: './Dashboard',
 		icon: 'HomeOutlined',
 	},
 	{
-		path: '/gioi-thieu',
-		name: 'About',
-		component: './TienIch/GioiThieu',
-		hideInMenu: true,
+		path: '/workout-log',
+		name: 'Nhật ký tập luyện',
+		component: './WorkoutLog',
+		icon: 'CalendarOutlined',
 	},
 	{
-		path: '/random-user',
-		name: 'RandomUser',
-		component: './RandomUser',
-		icon: 'ArrowsAltOutlined',
+		path: '/health-metrics',
+		name: 'Chỉ số sức khỏe',
+		component: './HealthMetrics',
+		icon: 'HeartOutlined',
 	},
 	{
-		path: '/todo-list',
-		name: 'TodoList',
-		icon: 'OrderedListOutlined',
-		component: './TodoList',
+		path: '/goals',
+		name: 'Quản lý mục tiêu',
+		component: './Goals',
+		icon: 'FlagOutlined',
+	},
+	{
+		path: '/exercise-library',
+		name: 'Thư viện bài tập',
+		component: './ExerciseLibrary',
+		icon: 'BookOutlined',
 	},
 
 	// DANH MUC HE THONG
