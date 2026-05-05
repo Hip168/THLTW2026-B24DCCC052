@@ -1,4 +1,4 @@
-﻿export default [
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -41,6 +41,18 @@
 		name: 'TodoList',
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
+	},
+	{
+		path: '/kanban',
+		name: 'Kanban Board',
+		icon: 'AppstoreOutlined',
+		component: './KanbanBoard',
+	},
+	{
+		path: '/danh-sach-task',
+		name: 'Danh sách Task',
+		icon: 'UnorderedListOutlined',
+		component: './DanhSachTask',
 	},
 
 	// DANH MUC HE THONG
